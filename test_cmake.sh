@@ -7,4 +7,5 @@ mkdir -p $BUILD
 cd $BUILD
 
 export CMAKE_PREFIX_PATH=$VIRTUAL_ENV
-cmake .. && make && ./foo
+cmake .. && make 
+DYLD_LIBRARY_PATH=/Users/jostheimer/virtualenvs/loom/lib/ ./foo
